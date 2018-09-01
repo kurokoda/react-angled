@@ -24,7 +24,7 @@ class Header extends Component {
     const {classes} = this;
 
     return (
-      <div className={classes.container}>
+      <div id='header' className={classes.container}>
         Header
       </div>
     );
@@ -45,6 +45,8 @@ class Header extends Component {
   static getStyles = () => {
     return StyleSheet.create({
       container: {
+        position       : 'fixed',
+        width          : '100%',
         backgroundColor: 'blue',
         height         : '50px',
       },
