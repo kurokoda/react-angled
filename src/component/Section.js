@@ -14,7 +14,7 @@ class Section extends Component {
   // Type validation ------------------------------------------------------------------------------------------
 
   static propTypes = {
-    'foo': PropTypes.string,
+    'final': PropTypes.bool,
   };
 
   // React lifecycle ------------------------------------------------------------------------------------------

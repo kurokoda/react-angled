@@ -11,6 +11,8 @@ class App extends Component {
         <Header/>
         <Top/>
         <Section/>
+        <Section/>
+        <Section final={true}/>
         <Footer/>
       </div>
     );
