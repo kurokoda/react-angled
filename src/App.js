@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Footer from './component/Footer';
+import Header from './component/Header';
+import Section from './component/Section';
+import Top from './component/Top';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <header/>
-        <footer/>
+        <Header/>
+        <Top/>
+        <Section/>
+        <Footer/>
       </div>
     );
   }
