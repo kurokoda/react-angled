@@ -46,7 +46,7 @@ class Section extends Component {
   static getStyles = () => {
     return StyleSheet.create({
       container: {
-        height         : '50px',
+        height         : '250px',
       },
       left: {
         backgroundColor: 'white',
