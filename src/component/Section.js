@@ -14,7 +14,7 @@ class Section extends Component {
   // Type validation ------------------------------------------------------------------------------------------
 
   static propTypes = {
-    'final': PropTypes.bool,
+    'orientation': PropTypes.string.isRequired,
   };
 
   // React lifecycle ------------------------------------------------------------------------------------------
@@ -33,10 +33,11 @@ class Section extends Component {
   // Getters ------------------------------------------------------------------------------------------
 
   get classes() {
-    const styles = Section.getStyles();
+    const styles        = Section.getStyles();
+    const {orientation} = this.props;
 
     return {
-      container: css(styles.container),
+      container: css([styles.container, styles[orientation]]),
     };
   }
 
@@ -45,8 +46,13 @@ class Section extends Component {
   static getStyles = () => {
     return StyleSheet.create({
       container: {
-        backgroundColor: 'green',
         height         : '50px',
+      },
+      left: {
+        backgroundColor: 'white',
+      },
+      left: {
+        backgroundColor: 'grey',
       },
     });
   }
